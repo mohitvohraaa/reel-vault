@@ -1,0 +1,7 @@
+# Normalize line endings. Shell scripts MUST stay LF so they run in Linux containers.
+* text=auto
+*.sh text eol=lf
+entrypoint.sh text eol=lf
+*.py text
+*.ts text
+*.tsx text

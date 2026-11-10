@@ -1,0 +1,35 @@
+# --- Web / API ---
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# --- Database ---
+SQLAlchemy==2.0.36
+psycopg[binary]==3.2.3
+pgvector==0.3.6
+alembic==1.14.0
+
+# --- Background processing ---
+celery==5.4.0
+# Pin kombu to 5.4.x: kombu 5.5+ requires redis-py>=6.1.0, which Celery 5.4 caps below.
+kombu==5.4.2
+redis==5.2.1
+
+# --- Media / transcription ---
+yt-dlp==2024.11.18
+faster-whisper==1.1.0
+
+# --- AI providers (optional at runtime; imported lazily) ---
+openai==1.57.4
+google-generativeai==0.8.3
+
+# --- PDF export ---
+jinja2==3.1.4
+weasyprint==63.1
+qrcode[pil]==8.0
+
+# --- Tests ---
+pytest==8.3.4
+httpx==0.28.1
